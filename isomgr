@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+from isomanager.isolist import IsoList
+from isomanager.isodownloader import IsoDownloader
+from isomanager.isoverifier import IsoVerifier
+from argparse import ArgumentParser
+from tabulate import tabulate
+
+definitions = IsoList.load_all_definitions()
+argparser = ArgumentParser(description="ISO Manager")
+
+argparser_filters = argparser.add_argument_group('Filters')
+argparser_filters.add_argument('--type', '-t', help="Filter on iso type", choices=definitions.types)
+argparser_filters.add_argument('--support', '-s', help="Filter on support level", choices=["lts", "non-lts"])
+argparser_filters.add_argument('--distro', '-d', help="Filter on distribution", choices=definitions.distros)
+argparser_filters.add_argument('--arch', '-a', help="Filter on architecture", choices=definitions.architectures)
+argparser_filters.add_argument('--target', help="Filter on target", choices=definitions.targets)
+argparser_filters.add_argument('--desktop', help="Filter on desktop environment",
+                               choices=definitions.desktop_environments)
+
+argparser.add_argument('--path-format', '-p', help="Format for the iso path",
+                       default="{Distro}/{number} {Codename}/{Target} {arch}.iso")
+argparser.add_argument('action', help="Action to execute", choices=["dry-run", "download", "verify"])
+
+args = argparser.parse_args()
+
+filters = args.__dict__
+filtered_iso_list = definitions.get(filters)
+
+if args.action == "dry-run" or args.action == "download":
+    rows = []
+    for iso in filtered_iso_list:
+        row = [
+            iso.distro,
+            iso.release_number,
+            iso.codename,
+            iso.arch,
+            iso.target,
+            iso.desktop_environment,
+            iso.get_path(args.path_format),
+            iso.get_status(args.path_format)
+        ]
+        rows.append(row)
+    print(tabulate(rows,
+                   headers=['Distro', 'Number', 'Codename', 'Arch', 'Target', 'Desktop environment', 'Path', 'Status']))
+
+if args.action == "download":
+    downloader = IsoDownloader()
+    downloader.start(filtered_iso_list, args.path_format)
+
+if args.action == "verify":
+    verifier = IsoVerifier()
+    verifier.start(filtered_iso_list, args.path_format)

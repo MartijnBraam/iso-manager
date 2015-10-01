@@ -1,0 +1,108 @@
+Ubuntu:
+  type: linux
+  releases:
+    - number: "12.04"
+      codename: "Precise Pangolin"
+      lts: true
+      packaging: apt
+      checksums:
+        md5: http://releases.ubuntu.com/12.04.5/MD5SUMS
+        sha1: http://releases.ubuntu.com/12.04.5/SHA1SUMS
+      pgp:
+        id: FBB75451
+        keyserver: hkp://keyserver.ubuntu.com
+      downloads:
+        - label: "Ubuntu 12.04 Desktop Unity x86"
+          target: desktop
+          de: unity
+          arch: i386
+          netboot: false
+          url: http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-desktop-i386.iso
+        - label: "Ubuntu 12.04 Desktop Unity x64"
+          target: desktop
+          de: unity
+          arch: amd64
+          netboot: false
+          url: http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-desktop-amd64.iso
+        - label: "Ubuntu 12.04 Server x86"
+          target: server
+          de: ~
+          arch: i386
+          netboot: false
+          url: http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-server-i386.iso
+        - label: "Ubuntu 12.04 Server x64"
+          target: server
+          de: ~
+          arch: amd64
+          netboot: false
+          url: http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-server-amd64.iso
+    - number: "14.04"
+      codename: "Trusty Tahr"
+      lts: true
+      packaging: apt
+      checksums:
+        md5: http://releases.ubuntu.com/14.04.3/MD5SUMS
+        sha1: http://releases.ubuntu.com/14.04.3/SHA1SUMS
+      pgp:
+        id: FBB75451
+        keyserver: hkp://keyserver.ubuntu.com
+      downloads:
+        - label: "Ubuntu 14.04 Desktop Unity x86"
+          target: desktop
+          de: unity
+          arch: i386
+          netboot: false
+          url: http://releases.ubuntu.com/14.04.3/ubuntu-14.04.3-desktop-i386.iso
+        - label: "Ubuntu 14.04 Desktop Unity x64"
+          target: desktop
+          de: unity
+          arch: amd64
+          netboot: false
+          url: http://releases.ubuntu.com/14.04.3/ubuntu-14.04.3-desktop-amd64.iso
+        - label: "Ubuntu 14.04 Server x86"
+          target: server
+          de: ~
+          arch: i386
+          netboot: false
+          url: http://releases.ubuntu.com/14.04.3/ubuntu-14.04.3-server-i386.iso
+        - label: "Ubuntu 14.04 Server x64"
+          target: server
+          de: ~
+          arch: amd64
+          netboot: false
+          url: http://releases.ubuntu.com/14.04.3/ubuntu-14.04.3-server-amd64.iso
+    - number: "15.04"
+      codename: "Vivid Vervet"
+      lts: false
+      packaging: apt
+      checksums:
+        md5: http://releases.ubuntu.com/15.04/MD5SUMS
+        sha1: http://releases.ubuntu.com/15.04/SHA1SUMS
+      pgp:
+        id: FBB75451
+        keyserver: hkp://keyserver.ubuntu.com
+      downloads:
+        - label: "Ubuntu 15.04 Desktop Unity x86"
+          target: desktop
+          de: unity
+          arch: i386
+          netboot: false
+          url: http://releases.ubuntu.com/15.04/ubuntu-15.04-desktop-i386.iso
+        - label: "Ubuntu 15.04 Desktop Unity x64"
+          target: desktop
+          de: unity
+          arch: amd64
+          netboot: false
+          url: http://releases.ubuntu.com/15.04/ubuntu-15.04-desktop-amd64.iso
+        - label: "Ubuntu 15.04 Server x86"
+          target: server
+          de: ~
+          arch: i386
+          netboot: false
+          url: http://releases.ubuntu.com/15.04/ubuntu-15.04-server-i386.iso
+        - label: "Ubuntu 15.04 Server x64"
+          target: server
+          de: ~
+          arch: amd64
+          netboot: false
+          url: http://releases.ubuntu.com/15.04/ubuntu-15.04-server-amd64.iso
