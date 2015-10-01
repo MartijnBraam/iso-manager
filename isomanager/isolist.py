@@ -77,6 +77,7 @@ class IsoList(object):
                 definition.codename = release['codename']
                 definition.long_time_support = release['lts']
                 definition.checksum_file = release['checksums']
+                definition.pgp_suffix = release['signature-suffix']
 
                 definition.pgp_key_id = release['pgp']['id']
                 definition.pgp_keyserver = release['pgp']['keyserver']
@@ -113,6 +114,7 @@ class IsoDefinition(object):
         self.url = None
         self.pgp_key_id = None
         self.pgp_keyserver = None
+        self.pgp_suffix = None
         self.filename = None
 
     def get_path(self, format_pattern):
