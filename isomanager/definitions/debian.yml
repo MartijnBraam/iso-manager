@@ -20,8 +20,8 @@ Debian:
           - http://cdimage.debian.org/cdimage/archive/6.0.10/i386/iso-cd/SHA512SUMS
           - http://cdimage.debian.org/cdimage/archive/6.0.10/amd64/iso-dvd/SHA512SUMS
       pgp:
-        id: FBB75451
-        keyserver: hkp://keyserver.ubuntu.com
+        id: 6294BE9B
+        keyserver: keyring.debian.org
       downloads:
         - label: "Debian 6.0 CD 1 i386"
           target: server-desktop
