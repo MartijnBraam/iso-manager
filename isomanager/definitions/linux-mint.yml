@@ -1,0 +1,63 @@
+Linux Mint:
+  type: linux
+  releases:
+    - number: "13"
+      codename: "Maya"
+      lts: true
+      packaging: apt
+      signature-suffix: ~
+      checksums:
+        md5: http://mintlinux.mirror.triple-it.nl/iso/stable/13/md5sum.txt
+        sha256: http://mintlinux.mirror.triple-it.nl/iso/stable/13/sha256sum.txt
+      pgp:
+        id: FBB75451
+        keyserver: hkp://keyserver.ubuntu.com
+      downloads:
+        - label: "Linux Mint 13 Cinnamon x86"
+          target: desktop
+          de: cinnamon
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/13/linuxmint-13-cinnamon-dvd-32bit.iso
+        - label: "Linux Mint 13 Cinnamon x64"
+          target: desktop
+          de: cinnamon
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/13/linuxmint-13-cinnamon-dvd-64bit.iso
+        - label: "Linux Mint 13 KDE x86"
+          target: desktop
+          de: kde
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/13/linuxmint-13-kde-dvd-32bit.iso
+        - label: "Linux Mint 13 KDE x64"
+          target: desktop
+          de: kde
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/13/linuxmint-13-kde-dvd-64bit.iso
+        - label: "Linux Mint 13 Mate x86"
+          target: desktop
+          de: mate
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/13/linuxmint-13-mate-dvd-32bit.iso
+        - label: "Linux Mint 13 Mate x64"
+          target: desktop
+          de: mate
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/13/linuxmint-13-mate-dvd-64bit.iso
+        - label: "Linux Mint 13 XFCE x86"
+          target: desktop
+          de: xfce
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/13/linuxmint-13-xfce-dvd-32bit.iso
+        - label: "Linux Mint 13 XFCE x64"
+          target: desktop
+          de: xfce
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/13/linuxmint-13-xfce-dvd-64bit.iso

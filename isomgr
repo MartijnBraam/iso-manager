@@ -18,7 +18,7 @@ argparser_filters.add_argument('--desktop', help="Filter on desktop environment"
                                choices=definitions.desktop_environments)
 
 argparser.add_argument('--path-format', '-p', help="Format for the iso path",
-                       default="{Distro}/{number} {Codename}/{Target} {arch}.iso")
+                       default="{Distro}/{number} {Codename}/{Target} {arch} {de}.iso")
 argparser.add_argument('action', help="Action to execute", choices=["dry-run", "download", "verify"])
 
 args = argparser.parse_args()

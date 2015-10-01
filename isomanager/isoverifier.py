@@ -24,7 +24,8 @@ class IsoVerifier(object):
                 for file in file_list:
                     if (file, False) not in checksum_files:
                         checksum_files.append((file, False))
-                        checksum_files.append(("{}{}".format(file, job.pgp_suffix), True))
+                        if job.pgp_suffix:
+                            checksum_files.append(("{}{}".format(file, job.pgp_suffix), True))
                         pgp_public_keys[file] = {
                             'id': job.pgp_key_id,
                             'keyserver': job.pgp_keyserver
