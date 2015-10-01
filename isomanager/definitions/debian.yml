@@ -1,0 +1,37 @@
+Debian:
+  type: linux
+  releases:
+    - number: "6.0"
+      codename: "squeeze"
+      lts: true
+      packaging: apt
+      signature-suffix: '.sign'
+      checksums:
+        md5:
+          - http://cdimage.debian.org/cdimage/archive/6.0.10/i386/iso-cd/MD5SUMS
+          - http://cdimage.debian.org/cdimage/archive/6.0.10/amd64/iso-dvd/MD5SUMS
+        sha1:
+          - http://cdimage.debian.org/cdimage/archive/6.0.10/i386/iso-cd/SHA1SUMS
+          - http://cdimage.debian.org/cdimage/archive/6.0.10/amd64/iso-dvd/SHA1SUMS
+        sha256:
+          - http://cdimage.debian.org/cdimage/archive/6.0.10/i386/iso-cd/SHA256SUMS
+          - http://cdimage.debian.org/cdimage/archive/6.0.10/amd64/iso-dvd/SHA256SUMS
+        sha512:
+          - http://cdimage.debian.org/cdimage/archive/6.0.10/i386/iso-cd/SHA512SUMS
+          - http://cdimage.debian.org/cdimage/archive/6.0.10/amd64/iso-dvd/SHA512SUMS
+      pgp:
+        id: FBB75451
+        keyserver: hkp://keyserver.ubuntu.com
+      downloads:
+        - label: "Debian 6.0 CD 1 i386"
+          target: server-desktop
+          de: gnome2
+          arch: i386
+          netboot: false
+          url: http://cdimage.debian.org/cdimage/archive/6.0.10/i386/iso-cd/debian-6.0.10-i386-CD-1.iso
+        - label: "Debian 6.0 CD 1 amd64"
+          target: server-desktop
+          de: gnome2
+          arch: amd64
+          netboot: false
+          url: http://cdimage.debian.org/cdimage/archive/6.0.10/amd64/iso-cd/debian-6.0.10-amd64-CD-1.iso

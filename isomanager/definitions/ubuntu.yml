@@ -5,6 +5,7 @@ Ubuntu:
       codename: "Precise Pangolin"
       lts: true
       packaging: apt
+      signature-suffix: '.gpg'
       checksums:
         md5: http://releases.ubuntu.com/12.04.5/MD5SUMS
         sha1: http://releases.ubuntu.com/12.04.5/SHA1SUMS
@@ -40,6 +41,7 @@ Ubuntu:
       codename: "Trusty Tahr"
       lts: true
       packaging: apt
+      signature-suffix: '.gpg'
       checksums:
         md5: http://releases.ubuntu.com/14.04.3/MD5SUMS
         sha1: http://releases.ubuntu.com/14.04.3/SHA1SUMS
@@ -75,6 +77,7 @@ Ubuntu:
       codename: "Vivid Vervet"
       lts: false
       packaging: apt
+      signature-suffix: '.gpg'
       checksums:
         md5: http://releases.ubuntu.com/15.04/MD5SUMS
         sha1: http://releases.ubuntu.com/15.04/SHA1SUMS
@@ -110,6 +113,7 @@ Ubuntu:
       codename: "Wily Werewolf"
       lts: false
       packaging: apt
+      signature-suffix: '.gpg'
       checksums:
         md5: http://releases.ubuntu.com/15.10/MD5SUMS
         sha1: http://releases.ubuntu.com/15.10/SHA1SUMS
