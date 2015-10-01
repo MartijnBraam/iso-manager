@@ -106,3 +106,38 @@ Ubuntu:
           arch: amd64
           netboot: false
           url: http://releases.ubuntu.com/15.04/ubuntu-15.04-server-amd64.iso
+    - number: "15.10"
+      codename: "Wily Werewolf"
+      lts: false
+      packaging: apt
+      checksums:
+        md5: http://releases.ubuntu.com/15.10/MD5SUMS
+        sha1: http://releases.ubuntu.com/15.10/SHA1SUMS
+      pgp:
+        id: FBB75451
+        keyserver: hkp://keyserver.ubuntu.com
+      downloads:
+        - label: "Ubuntu 15.10 Desktop Unity x86"
+          target: desktop
+          de: unity
+          arch: i386
+          netboot: false
+          url: http://releases.ubuntu.com/15.10/ubuntu-15.10-desktop-i386.iso
+        - label: "Ubuntu 15.10 Desktop Unity x64"
+          target: desktop
+          de: unity
+          arch: amd64
+          netboot: false
+          url: http://releases.ubuntu.com/15.10/ubuntu-15.10-desktop-amd64.iso
+        - label: "Ubuntu 15.10 Server x86"
+          target: server
+          de: ~
+          arch: i386
+          netboot: false
+          url: http://releases.ubuntu.com/15.10/ubuntu-15.10-server-i386.iso
+        - label: "Ubuntu 15.10 Server x64"
+          target: server
+          de: ~
+          arch: amd64
+          netboot: false
+          url: http://releases.ubuntu.com/15.10/ubuntu-15.10-server-amd64.iso
