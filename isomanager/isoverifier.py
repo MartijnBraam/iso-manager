@@ -16,6 +16,8 @@ class IsoVerifier(object):
                 file_list = job.checksum_file["sha1"]
             elif "md5" in job.checksum_file:
                 file_list = job.checksum_file["md5"]
+            elif "sha256" in job.checksum_file:
+                file_list = job.checksum_file["sha256"]
             else:
                 print("No checksums available for {}".format(job.label))
             if file_list:
@@ -102,6 +104,9 @@ class IsoVerifier(object):
                     elif "md5" in job.checksum_file:
                         file_list = job.checksum_file["md5"]
                         algorithm = "md5"
+                    elif "sha256" in job.checksum_file:
+                        file_list = job.checksum_file["sha256"]
+                        algorithm = "sha256"
                     else:
                         raise Exception("No hash key found")
                     if not isinstance(file_list, list):
@@ -125,6 +130,9 @@ class IsoVerifier(object):
             hasher = hashlib.md5()
         elif algorithm == "sha1":
             hasher = hashlib.sha1()
+        elif algorithm == "sha256":
+            hasher = hashlib.sha256()
+
         else:
             raise Exception("Hash function not supported")
         with open(filename, 'rb') as file:

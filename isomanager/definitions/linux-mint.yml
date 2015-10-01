@@ -10,7 +10,7 @@ Linux Mint:
         md5: http://mintlinux.mirror.triple-it.nl/iso/stable/13/md5sum.txt
         sha256: http://mintlinux.mirror.triple-it.nl/iso/stable/13/sha256sum.txt
       pgp:
-        id: FBB75451
+        id: 0FF405B2
         keyserver: hkp://keyserver.ubuntu.com
       downloads:
         - label: "Linux Mint 13 Cinnamon x86"
@@ -61,3 +61,180 @@ Linux Mint:
           arch: amd64
           netboot: false
           url: http://mintlinux.mirror.triple-it.nl/iso/stable/13/linuxmint-13-xfce-dvd-64bit.iso
+    - number: "17"
+      codename: "Qiana"
+      lts: true
+      packaging: apt
+      signature-suffix: '.gpg'
+      checksums:
+        sha256: http://mintlinux.mirror.triple-it.nl/iso/stable/17/sha256sum.txt
+      pgp:
+        id: 0FF405B2
+        keyserver: hkp://keyserver.ubuntu.com
+      downloads:
+        - label: "Linux Mint 17 Cinnamon x86"
+          target: desktop
+          de: cinnamon
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17/linuxmint-17-cinnamon-32bit-v2.iso
+        - label: "Linux Mint 17 Cinnamon x64"
+          target: desktop
+          de: cinnamon
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17/linuxmint-17-cinnamon-64bit-v2.iso
+        - label: "Linux Mint 17 KDE x86"
+          target: desktop
+          de: kde
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17/linuxmint-17-kde-dvd-32bit.iso
+        - label: "Linux Mint 17 KDE x64"
+          target: desktop
+          de: kde
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17/linuxmint-17-kde-dvd-64bit.iso
+        - label: "Linux Mint 17 Mate x86"
+          target: desktop
+          de: mate
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17/linuxmint-17-mate-32bit-v2.iso
+        - label: "Linux Mint 17 Mate x64"
+          target: desktop
+          de: mate
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17/linuxmint-17-mate-64bit-v2.iso
+        - label: "Linux Mint 17 XFCE x86"
+          target: desktop
+          de: xfce
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17/linuxmint-17-xfce-dvd-32bit.iso
+        - label: "Linux Mint 17 XFCE x64"
+          target: desktop
+          de: xfce
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17/linuxmint-17-xfce-dvd-64bit.iso
+    - number: "17.1"
+      codename: "Rebecca"
+      lts: true
+      packaging: apt
+      signature-suffix: '.gpg'
+      checksums:
+        sha256: http://mintlinux.mirror.triple-it.nl/iso/stable/17/sha256sum.txt
+      pgp:
+        id: 0FF405B2
+        keyserver: hkp://keyserver.ubuntu.com
+      downloads:
+        - label: "Linux Mint 17.1 Cinnamon x86"
+          target: desktop
+          de: cinnamon
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.1-cinnamon-32bit.iso
+        - label: "Linux Mint 17.1 Cinnamon x64"
+          target: desktop
+          de: cinnamon
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.1-cinnamon-64bit.iso
+        - label: "Linux Mint 17.1 KDE x86"
+          target: desktop
+          de: kde
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.1-kde-32bit.iso
+        - label: "Linux Mint 17.1 KDE x64"
+          target: desktop
+          de: kde
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.1-kde-64bit.iso
+        - label: "Linux Mint 17.1 Mate x86"
+          target: desktop
+          de: mate
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.1-mate-32bit.iso
+        - label: "Linux Mint 17.1 Mate x64"
+          target: desktop
+          de: mate
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.1-mate-64bit.iso
+        - label: "Linux Mint 17.1 XFCE x86"
+          target: desktop
+          de: xfce
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.1-xfce-32bit.iso
+        - label: "Linux Mint 17.1 XFCE x64"
+          target: desktop
+          de: xfce
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.1-xfce-64bit.iso
+    - number: "17.2"
+      codename: "Rafaela"
+      lts: true
+      packaging: apt
+      signature-suffix: '.gpg'
+      checksums:
+        sha256: http://mintlinux.mirror.triple-it.nl/iso/stable/17/sha256sum.txt
+      pgp:
+        id: 0FF405B2
+        keyserver: hkp://keyserver.ubuntu.com
+      downloads:
+        - label: "Linux Mint 17.2 Cinnamon x86"
+          target: desktop
+          de: cinnamon
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.2/linuxmint-17.2-cinnamon-32bit.iso
+        - label: "Linux Mint 17.2 Cinnamon x64"
+          target: desktop
+          de: cinnamon
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.2-cinnamon-64bit.iso
+        - label: "Linux Mint 17.2 KDE x86"
+          target: desktop
+          de: kde
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.2-kde-32bit.iso
+        - label: "Linux Mint 17.2 KDE x64"
+          target: desktop
+          de: kde
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.2-kde-64bit.iso
+        - label: "Linux Mint 17.2 Mate x86"
+          target: desktop
+          de: mate
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.2-mate-32bit.iso
+        - label: "Linux Mint 17.2 Mate x64"
+          target: desktop
+          de: mate
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.2-mate-64bit.iso
+        - label: "Linux Mint 17.2 XFCE x86"
+          target: desktop
+          de: xfce
+          arch: i386
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.2-xfce-32bit.iso
+        - label: "Linux Mint 17.2 XFCE x64"
+          target: desktop
+          de: xfce
+          arch: amd64
+          netboot: false
+          url: http://mintlinux.mirror.triple-it.nl/iso/stable/17.1/linuxmint-17.2-xfce-64bit.iso
